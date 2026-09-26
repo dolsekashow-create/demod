@@ -16,7 +16,7 @@ ScrollTrigger.config({ ignoreMobileResize: true });
 /* ---------- Projects (rendered from projects.js) ---------- */
 const INITIAL_COUNT = 12;
 const grid = document.getElementById("projectsGrid");
-const imgPath = (n) => `assets/img/projects/${n}.jpg`;
+const imgPath = (n) => `img/projects/${n}.jpg`;
 
 grid.innerHTML = PROJECTS.map((p, i) => {
   const gallery = `project-${i}`;

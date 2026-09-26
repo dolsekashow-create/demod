@@ -1,14 +1,17 @@
 /* =========================================================
    سابقة الأعمال — لإضافة مشروع جديد: أضف عنصرًا في المصفوفة
-   cat: industrial | commercial | public | residential | mosques | finishing
-   imgs: أسماء الصور داخل assets/img/projects (أول صورة هي الغلاف)
+   cat: industrial | commercial | public | residential | mosques | finishing | acoustic
+   imgs: أسماء الصور داخل img/projects (أول صورة هي الغلاف)
    ========================================================= */
 const PROJECTS = [
   { title: "مشروع منازل الماسة للشقق المخدومة", place: "محافظة عنيزة", cat: "residential", label: "تشطيبات سكنية", imgs: ["almasa"] },
   { title: "مشروع القصيبي GTC", place: "مستودعات ومباني إدارية", cat: "industrial", label: "صناعي ولوجستي", imgs: ["qusaibi-1", "qusaibi-5", "qusaibi-2", "qusaibi-3", "qusaibi-4"], size: "wide" },
   { title: "مشروع ايكيا", place: "المدينة المنورة", cat: "commercial", label: "تجاري", imgs: ["ikea"] },
   { title: "إنشاء قصر خاص", place: "محافظة البكيرية", cat: "residential", label: "قصور", imgs: ["palace-bukayriyah"], size: "tall" },
+  { title: "عزل صوتي — سينما منزلية", place: "ألواح أكوستيك وإضاءة مخفية", cat: "acoustic", label: "عزل صوتي", imgs: ["home-cinema-1", "home-cinema-2", "home-cinema-3", "home-cinema-poster"], size: "wide" },
   { title: "مشروع سدافكو", place: "المملكة العربية السعودية", cat: "industrial", label: "صناعي", imgs: ["sadafco-1", "sadafco-2"] },
+  { title: "عوازل صالات سينما", place: "عزل صوتي كامل للجدران والأسقف", cat: "acoustic", label: "عزل صوتي", imgs: ["cinema-1", "cinema-2", "cinema-3", "cinema-poster"], size: "tall" },
+  { title: "عزل صوتي للمكاتب", place: "قاعات اجتماعات ومكاتب إدارية", cat: "acoustic", label: "عزل صوتي", imgs: ["office-acoustic-1", "office-acoustic-2", "office-acoustic-3", "office-acoustic-poster"] },
   { title: "أعمال تشطيبات جامع الرحمة", place: "محافظة عنيزة", cat: "mosques", label: "مساجد", imgs: ["rahma-1", "rahma-2"] },
   { title: "فلل سكنية خاصة تسليم مفتاح", place: "محافظة عنيزة", cat: "residential", label: "سكني", imgs: ["villas-1", "villas-2"] },
   { title: "مشروع كلية العلوم والدراسات الإنسانية", place: "مدينة الأفلاج", cat: "public", label: "تعليمي", imgs: ["aflaj-1", "aflaj-2", "aflaj-3", "aflaj-4"] },
