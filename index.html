@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>فانتاسي هاوس | مؤسسة منزل الخيال للمقاولات</title>
+  <meta name="description" content="فانتاسي هاوس - مؤسسة منزل الخيال للمقاولات العامة والتشطيبات والديكورات والعزل الصوتي بالمملكة العربية السعودية." />
+  <link rel="icon" type="image/png" href="assets/img/brand/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Preloader ===== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <img src="assets/img/brand/logo.png" alt="فانتاسي هاوس" class="preloader__logo" />
+      <div class="preloader__bar"><span id="preloaderBar"></span></div>
+      <div class="preloader__count" id="preloaderCount">0%</div>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__info">
+          <a href="tel:0550649926"><i class="ri-phone-line"></i> <span dir="ltr">055 064 9926</span></a>
+          <a href="mailto:est.alkhayal2030@gmail.com"><i class="ri-mail-line"></i> est.alkhayal2030@gmail.com</a>
+          <span class="hide-sm"><i class="ri-map-pin-line"></i> منطقة القصيم - المملكة العربية السعودية</span>
+        </div>
+        <div class="topbar__social">
+          <a href="https://www.fantasyhouse.sa" target="_blank" rel="noopener"><i class="ri-global-line"></i> fantasyhouse.sa</a>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container nav__inner">
+        <a href="#home" class="logo" aria-label="فانتاسي هاوس">
+          <img src="assets/img/brand/logo.png" alt="فانتاسي هاوس للتشطيبات والديكورات" />
+        </a>
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#home" class="active">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#acoustic">العزل الصوتي</a></li>
+          <li><a href="#projects">أعمالنا</a></li>
+          <li><a href="#documents">مستنداتنا</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary nav__cta magnetic">اطلب عرض سعر <i class="ri-arrow-left-up-line"></i></a>
+        <button class="nav__toggle" id="navToggle" aria-label="القائمة"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="swiper hero__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="hero__bg" style="background-image:url('assets/img/projects/almasa.jpg')"></div></div>
+          <div class="swiper-slide"><div class="hero__bg" style="background-image:url('assets/img/projects/qusaibi-5.jpg')"></div></div>
+          <div class="swiper-slide"><div class="hero__bg" style="background-image:url('assets/img/projects/palace-bukayriyah.jpg')"></div></div>
+          <div class="swiper-slide"><div class="hero__bg" style="background-image:url('assets/img/gallery/g01.jpg')"></div></div>
+        </div>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__grid-lines"><span></span><span></span><span></span><span></span></div>
+
+      <div class="container hero__content">
+        <div class="hero__badge reveal-hero"><span class="pulse"></span> مؤسسة منزل الخيال للمقاولات العامة</div>
+        <h1 class="hero__title">
+          <span class="line"><span class="word">نبني</span> <span class="word">رؤيتك</span></span>
+          <span class="line"><span class="word accent">بجودة</span> <span class="word">وثقة</span></span>
+        </h1>
+        <p class="hero__text reveal-hero">
+          مقاولات عامة، إنشاءات، تشطيبات وديكورات وعزل صوتي — بفريق محترف وخبرة واسعة في مختلف القطاعات، من التصميم وحتى التسليم.
+        </p>
+        <div class="hero__actions reveal-hero">
+          <a href="#projects" class="btn btn--primary btn--lg magnetic">استعرض أعمالنا <i class="ri-arrow-left-line"></i></a>
+          <a href="https://wa.me/966543249360" target="_blank" rel="noopener" class="hero__play">
+            <span class="hero__play-icon"><i class="ri-whatsapp-line"></i></span>
+            <span>تواصل عبر واتساب</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__stats reveal-hero">
+        <div class="container hero__stats-inner">
+          <div class="hero__stat"><i class="ri-medal-line"></i><div><strong>الجودة</strong><span>في التنفيذ</span></div></div>
+          <div class="hero__stat"><i class="ri-timer-flash-line"></i><div><strong>الالتزام</strong><span>بالمواعيد</span></div></div>
+          <div class="hero__stat"><i class="ri-shake-hands-line"></i><div><strong>شراكة</strong><span>في النجاح</span></div></div>
+        </div>
+      </div>
+
+      <div class="hero__pagination"></div>
+      <a href="#about" class="hero__scroll" aria-label="انزل لأسفل"><span></span></a>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>مقاولات عامة</span><i class="ri-home-5-fill"></i>
+        <span>تشطيبات داخلية وخارجية</span><i class="ri-home-5-fill"></i>
+        <span>ديكورات جبسية</span><i class="ri-home-5-fill"></i>
+        <span>عزل صوتي</span><i class="ri-home-5-fill"></i>
+        <span>هياكل حديدية</span><i class="ri-home-5-fill"></i>
+        <span>بلاط ورخام وبورسلان</span><i class="ri-home-5-fill"></i>
+        <span>مقاولات عامة</span><i class="ri-home-5-fill"></i>
+        <span>تشطيبات داخلية وخارجية</span><i class="ri-home-5-fill"></i>
+        <span>ديكورات جبسية</span><i class="ri-home-5-fill"></i>
+        <span>عزل صوتي</span><i class="ri-home-5-fill"></i>
+        <span>هياكل حديدية</span><i class="ri-home-5-fill"></i>
+        <span>بلاط ورخام وبورسلان</span><i class="ri-home-5-fill"></i>
+      </div>
+    </div>
+
+    <!-- ===== About ===== -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media">
+          <div class="about__img about__img--main img-reveal">
+            <img src="assets/img/projects/villas-1.jpg" alt="فلل سكنية تسليم مفتاح بمحافظة عنيزة" loading="lazy" />
+          </div>
+          <div class="about__img about__img--sub img-reveal">
+            <img src="assets/img/projects/gypsum-1.jpg" alt="أعمال ديكورات جبسية" loading="lazy" />
+          </div>
+          <div class="about__exp">
+            <strong><span class="counter" data-target="150">0</span>+</strong>
+            <span>مشروع<br />مكتمل</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <span class="section__tag fade-up">هنا صنّاع التطوير</span>
+          <h2 class="section__title fade-up">نبني ونصمم <span class="accent">بشغف</span> يعكس إبداعنا</h2>
+          <p class="section__text fade-up">
+            مؤسسة منزل الخيال للمقاولات العامة (فانتاسي هاوس) مؤسسة سعودية متخصصة في تنفيذ أعمال المقاولات العامة والتشطيبات والبناء، تجمع بين فنون الإنشاء وخدمات التجديد وإعادة البناء وتصميم الديكورات الداخلية والخارجية والسباكة والكهرباء. يبذل فريقنا المتميز من المهندسين والحرفيين جهدًا جبّارًا لتحقيق أعلى مستويات الجودة والسلامة.
+          </p>
+          <div class="about__features">
+            <div class="feature fade-up">
+              <div class="feature__icon"><i class="ri-medal-line"></i></div>
+              <div><h4>جودة في التنفيذ</h4><p>أعلى معايير الجودة والحرفية في جميع مشاريعنا.</p></div>
+            </div>
+            <div class="feature fade-up">
+              <div class="feature__icon"><i class="ri-timer-flash-line"></i></div>
+              <div><h4>التزام بالمواعيد</h4><p>نفي بتعهداتنا ونسلّم مشاريعنا في الوقت المتفق عليه.</p></div>
+            </div>
+            <div class="feature fade-up">
+              <div class="feature__icon"><i class="ri-settings-5-line"></i></div>
+              <div><h4>ذراع صناعي خاص</h4><p>شركة مزيد الخليج للصناعة — ذراعنا في التصنيع الحديدي لتقديم حلول متكاملة.</p></div>
+            </div>
+          </div>
+          <div class="about__footer fade-up">
+            <a href="#services" class="btn btn--dark magnetic">خدماتنا <i class="ri-arrow-left-line"></i></a>
+            <a href="tel:0550649926" class="about__call">
+              <span><i class="ri-phone-fill"></i></span>
+              <div><small>اتصل بنا مباشرة</small><strong dir="ltr">055 064 9926</strong></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vision & Mission -->
+      <div class="container vm">
+        <article class="vm-card fade-up">
+          <div class="vm-card__icon"><i class="ri-eye-line"></i></div>
+          <div>
+            <h3>الرؤية</h3>
+            <p>رسمت رؤيتنا بخطى من التميز والاستثنائية في عالم المقاولات. نسعى بتفانٍ لنكون مميزين في كل جانب من أوجه أعمالنا، ونبذل جهدًا حثيثًا في تقديم خدمات بجودة لا تُضاهى، متبنّين منهجيات عمل مبتكرة ومتقدمة تمكّننا من تحقيق تطلعات عملائنا والبقاء في صدارة صناعتنا.</p>
+          </div>
+        </article>
+        <article class="vm-card vm-card--dark fade-up">
+          <div class="vm-card__icon"><i class="ri-mail-send-line"></i></div>
+          <div>
+            <h3>الرسالة</h3>
+            <p>تسعى المؤسسة برؤى مستقبلية واعدة إلى تطوير قطاع المقاولات والبناء، فنحن نرسم مستقبلًا ملهمًا ومبتكرًا نقدّم فيه خدمات ذات جودة استثنائية ونلبّي تطلعات العملاء، ونعمل بكل جهد لترك بصمة إيجابية تواكب التقدّم السريع الذي تشهده المملكة العربية السعودية.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="section__tag fade-up">الخدمات</span>
+            <h2 class="section__title fade-up">حلول متكاملة <span class="accent">تحت سقف واحد</span></h2>
+          </div>
+          <p class="section__text fade-up">من الأساسات وحتى اللمسات الأخيرة، نغطي كل مراحل مشروعك بفرق متخصصة وخامات مختارة بعناية.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service tilt">
+            <span class="service__num">01</span>
+            <div class="service__icon"><i class="ri-pencil-ruler-2-line"></i></div>
+            <h3>التصاميم الداخلية والخارجية</h3>
+            <p>تصميم المساحات الداخلية والخارجية واختيار الألوان والمواد والأثاث والإضاءة لتحقيق مظهر جمالي ووظيفي متكامل.</p>
+          </article>
+          <article class="service tilt">
+            <span class="service__num">02</span>
+            <div class="service__icon"><i class="ri-building-2-line"></i></div>
+            <h3>الأعمال الإنشائية والعمرانية</h3>
+            <p>بناء المباني والمنشآت المختلفة بدءًا من الأساسات وصولًا إلى الهياكل العلوية، بما يشمل الهندسة المدنية والمعمارية.</p>
+          </article>
+          <article class="service tilt">
+            <span class="service__num">03</span>
+            <div class="service__icon"><i class="ri-paint-brush-line"></i></div>
+            <h3>الدهانات الداخلية والخارجية</h3>
+            <p>تنفيذ الدهانات بأنواعها، ودهانات المرافق الصحية المقاومة للبكتيريا لضمان سهولة التنظيف والتعقيم.</p>
+          </article>
+          <article class="service tilt">
+            <span class="service__num">04</span>
+            <div class="service__icon"><i class="ri-magic-line"></i></div>
+            <h3>أعمال الديكورات</h3>
+            <p>باركيه، بديل الخشب والرخام، الصفائح الحجرية، الديكورات والجبسيات لتحقيق لمسة جمالية وجودة عالية.</p>
+          </article>
+          <article class="service tilt">
+            <span class="service__num">05</span>
+            <div class="service__icon"><i class="ri-layout-masonry-line"></i></div>
+            <h3>أعمال التلبيس</h3>
+            <p>تغطية الأرضيات والحيطان بالبلاط أو الرخام أو الخشب لتحسين المظهر وتوفير سطح متين وسهل التنظيف.</p>
+          </article>
+          <article class="service tilt">
+            <span class="service__num">06</span>
+            <div class="service__icon"><i class="ri-grid-line"></i></div>
+            <h3>البلاط والرخام والبورسلان</h3>
+            <p>تركيب وتثبيت البلاط على الجدران والأرضيات باستخدام أجود أنواع المواد.</p>
+          </article>
+          <article class="service tilt">
+            <span class="service__num">07</span>
+            <div class="service__icon"><i class="ri-drop-line"></i></div>
+            <h3>الأعمال الصحية</h3>
+            <p>تركيب وصيانة أنظمة السباكة والصرف الصحي في المباني، مثل الحمامات والمرافق الصحية.</p>
+          </article>
+          <article class="service tilt">
+            <span class="service__num">08</span>
+            <div class="service__icon"><i class="ri-flashlight-line"></i></div>
+            <h3>الأعمال الكهربائية</h3>
+            <p>تركيب وصيانة الأنظمة الكهربائية داخل المباني، من الأسلاك والمفاتيح والمآخذ إلى الإضاءة.</p>
+          </article>
+          <article class="service tilt">
+            <span class="service__num">09</span>
+            <div class="service__icon"><i class="ri-door-open-line"></i></div>
+            <h3>الأبواب والنوافذ والدرابزينات</h3>
+            <p>تفصيل جميع أشكال الأبواب والنوافذ والدرابزينات بدقة ومهارة لضمان الأمان والعزل الحراري والصوتي.</p>
+          </article>
+          <article class="service tilt">
+            <span class="service__num">10</span>
+            <div class="service__icon"><i class="ri-shield-check-line"></i></div>
+            <h3>عزل الأرضيات والحوائط</h3>
+            <p>اختيار المواد المناسبة واستخدامها بعناية لمنع تسرب المياه والرطوبة، مما يزيد من كفاءة المبنى وعمره.</p>
+          </article>
+          <article class="service service--feature tilt">
+            <span class="service__num">11</span>
+            <div class="service__icon"><i class="ri-volume-mute-line"></i></div>
+            <h3>العزل الصوتي <em>جديد</em></h3>
+            <p>ألواح خشبية عازلة للصوت للسينما المنزلية والمكاتب والغرف — خصوصية أعلى وهدوء أكثر.</p>
+            <a href="#acoustic" class="service__link">اكتشف المزيد <i class="ri-arrow-left-line"></i></a>
+          </article>
+          <article class="service service--steel tilt" style="--bg:url('../img/projects/steel-2.jpg')">
+            <span class="service__num">12</span>
+            <div class="service__icon"><i class="ri-hammer-line"></i></div>
+            <h3>الهياكل والتصنيع الحديدي</h3>
+            <p>عبر شركة مزيد الخليج للصناعة: هياكل معدنية، مستودعات وهناجر، مظلات، أبواب ودرابزينات.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section class="stats">
+      <div class="stats__bg" style="background-image:url('assets/img/projects/qusaibi-3.jpg')"></div>
+      <div class="stats__overlay"></div>
+      <div class="container stats__grid">
+        <div class="stat"><i class="ri-calendar-check-line"></i><strong><span class="counter" data-target="10">0</span>+</strong><span>سنوات خبرة</span></div>
+        <div class="stat"><i class="ri-building-line"></i><strong><span class="counter" data-target="150">0</span>+</strong><span>مشروع مكتمل</span></div>
+        <div class="stat"><i class="ri-user-smile-line"></i><strong><span class="counter" data-target="200">0</span>+</strong><span>عملاء وشركاء</span></div>
+        <div class="stat"><i class="ri-team-line"></i><strong><span class="counter" data-target="100">0</span>+</strong><span>فريق عمل محترف</span></div>
+      </div>
+    </section>
+
+    <!-- ===== Acoustic insulation ===== -->
+    <section class="section acoustic" id="acoustic">
+      <div class="container acoustic__grid">
+        <div class="acoustic__content">
+          <span class="section__tag section__tag--light fade-up">خدمة جديدة</span>
+          <h2 class="section__title section__title--light fade-up">عازل داخلي <span class="accent">مانع للصوت</span></h2>
+          <p class="section__text acoustic__text fade-up">
+            ألواح خشبية أكوستيك بتصميم عصري تجمع بين الجمال والعزل الصوتي الفعّال — مثالية للسينما المنزلية، المكاتب، غرف الاجتماعات، غرف النوم والصالات.
+          </p>
+          <ul class="acoustic__perks fade-up">
+            <li><i class="ri-volume-mute-line"></i> منع تسرب الصوت</li>
+            <li><i class="ri-lock-2-line"></i> خصوصية أعلى</li>
+            <li><i class="ri-leaf-line"></i> هدوء أكثر</li>
+            <li><i class="ri-tools-line"></i> تنفيذ احترافي</li>
+          </ul>
+          <div class="specs fade-up">
+            <div><span>المقاس</span><strong dir="ltr">2400×600×21mm</strong></div>
+            <div><span>معامل امتصاص الصوت</span><strong>NRC 0.85</strong></div>
+            <div><span>مقاومة الحريق</span><strong>Grade B1</strong></div>
+            <div><span>القاعدة</span><strong>لباد PET ‏9مم</strong></div>
+          </div>
+          <div class="acoustic__uses fade-up">
+            <a href="assets/img/gallery/g05.jpg" class="glightbox use" data-gallery="acoustic-posters" data-title="عوازل سينما">
+              <img src="assets/img/gallery/g05.jpg" alt="عوازل سينما" loading="lazy" /><span>سينما منزلية</span>
+            </a>
+            <a href="assets/img/gallery/g02.jpg" class="glightbox use" data-gallery="acoustic-posters" data-title="عازل داخلي مانع للصوت - مكاتب">
+              <img src="assets/img/gallery/g02.jpg" alt="مكاتب" loading="lazy" /><span>مكاتب</span>
+            </a>
+            <a href="assets/img/gallery/g01.jpg" class="glightbox use" data-gallery="acoustic-posters" data-title="عازل داخلي مانع للصوت - سينما منزلية">
+              <img src="assets/img/gallery/g01.jpg" alt="سينما منزلية" loading="lazy" /><span>صالات عرض</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="acoustic__slider-wrap fade-up">
+          <div class="swiper acoustic__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="assets/img/gallery/g11.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g11.jpg" alt="ألواح أكوستيك خشبية" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g13.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g13.jpg" alt="ألواح أكوستيك في صالة" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g16.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g16.jpg" alt="ألواح أكوستيك فاتحة" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g14.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g14.jpg" alt="ألواح أكوستيك غرفة نوم" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g18.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g18.jpg" alt="ألواح أكوستيك خلف التلفزيون" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g17.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g17.jpg" alt="ألواح أكوستيك داكنة" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g20.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g20.jpg" alt="ألواح أكوستيك" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g15.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g15.jpg" alt="ألواح أكوستيك رمادية" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g09.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g09.jpg" alt="تطبيقات ألواح الأكوستيك" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g19.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g19.jpg" alt="ألواح أكوستيك بلون البلوط" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g06.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g06.jpg" alt="ألوان ألواح الأكوستيك" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g12.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g12.jpg" alt="مرونة ألواح الأكوستيك" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g04.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g04.jpg" alt="ألوان متعددة" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g10.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g10.jpg" alt="مخزون الألواح" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g03.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g03.jpg" alt="ألواح أكوستيك" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g07.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g07.jpg" alt="مقاسات لوح الأكوستيك" loading="lazy" /></a></div>
+              <div class="swiper-slide"><a href="assets/img/gallery/g08.jpg" class="glightbox" data-gallery="acoustic"><img src="assets/img/gallery/g08.jpg" alt="مواصفات لوح الأكوستيك" loading="lazy" /></a></div>
+            </div>
+          </div>
+          <div class="acoustic__controls">
+            <button class="a-prev" aria-label="السابق"><i class="ri-arrow-right-line"></i></button>
+            <div class="acoustic__pagination" dir="ltr"></div>
+            <button class="a-next" aria-label="التالي"><i class="ri-arrow-left-line"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__tag fade-up">سابقة أعمالنا</span>
+          <h2 class="section__title fade-up">مشاريع نفخر <span class="accent">بإنجازها</span></h2>
+          <p class="section__text fade-up">اضغط على أي مشروع لعرض صوره بالكامل.</p>
+        </div>
+
+        <div class="filters fade-up" id="filters">
+          <button class="filter active" data-filter="all">الكل</button>
+          <button class="filter" data-filter="industrial">صناعي ولوجستي</button>
+          <button class="filter" data-filter="commercial">تجاري</button>
+          <button class="filter" data-filter="public">حكومي وخدمي</button>
+          <button class="filter" data-filter="residential">سكني وقصور</button>
+          <button class="filter" data-filter="mosques">مساجد</button>
+          <button class="filter" data-filter="finishing">تشطيبات وديكور</button>
+        </div>
+
+        <div class="projects__grid" id="projectsGrid"><!-- rendered by main.js from PROJECTS --></div>
+
+        <div class="projects__more">
+          <button class="btn btn--dark magnetic" id="loadMore">عرض المزيد من الأعمال <i class="ri-add-line"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Values (horizontal pinned) ===== -->
+    <section class="why" id="values">
+      <div class="why__pin">
+        <div class="container why__head">
+          <span class="section__tag section__tag--light">القيم</span>
+          <h2 class="section__title section__title--light">قيم نلتزم بها في <span class="accent">كل مشروع</span></h2>
+        </div>
+        <div class="why__track" id="whyTrack">
+          <div class="why-card">
+            <span class="why-card__num">01</span>
+            <i class="ri-award-line"></i>
+            <h3>الجودة</h3>
+            <p>نلتزم بأعلى معايير الجودة والحرفية في جميع مشاريعنا لضمان تلبية تطلعات عملائنا.</p>
+          </div>
+          <div class="why-card why-card--img" style="background-image:url('assets/img/projects/rahma-1.jpg')">
+            <div><h3>جامع الرحمة</h3><p>أعمال تشطيبات بمحافظة عنيزة.</p></div>
+          </div>
+          <div class="why-card">
+            <span class="why-card__num">02</span>
+            <i class="ri-eye-line"></i>
+            <h3>الشفافية</h3>
+            <p>نتعامل مع عملائنا وشركائنا بشفافية تامة، ونقدّم معلومات دقيقة وواضحة حول عملياتنا وتكاليف المشاريع.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-card__num">03</span>
+            <i class="ri-chat-check-line"></i>
+            <h3>الصدق</h3>
+            <p>نلتزم بالصدق والنزاهة في التعامل مع العملاء والشركاء، ونقدّم المعلومات بدقة وبدون تحفّظ.</p>
+          </div>
+          <div class="why-card why-card--img" style="background-image:url('assets/img/projects/palace-bukayriyah.jpg')">
+            <div><h3>قصر خاص</h3><p>مشروع إنشاء بمحافظة البكيرية.</p></div>
+          </div>
+          <div class="why-card">
+            <span class="why-card__num">04</span>
+            <i class="ri-shield-star-line"></i>
+            <h3>الأمانة</h3>
+            <p>نحافظ على الأمانة في تنفيذ وإتمام المشاريع والوفاء بالتعهدات المتفق عليها مع العملاء.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Process ===== -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__tag fade-up">تكامل التصنيع مع التنفيذ</span>
+          <h2 class="section__title fade-up">رحلة مشروعك <span class="accent">خطوة بخطوة</span></h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline__line"><span id="timelineProgress"></span></div>
+          <div class="step">
+            <div class="step__dot"><i class="ri-pencil-ruler-2-line"></i></div>
+            <div class="step__card"><span>المرحلة 01</span><h3>التصميم الهندسي</h3><p>دراسة احتياجاتك وإعداد التصاميم والمخططات الهندسية.</p></div>
+          </div>
+          <div class="step">
+            <div class="step__dot"><i class="ri-settings-3-line"></i></div>
+            <div class="step__card"><span>المرحلة 02</span><h3>التصنيع والتوريد</h3><p>تصنيع وتوريد المواد بأعلى جودة عبر ذراعنا الصناعي.</p></div>
+          </div>
+          <div class="step">
+            <div class="step__dot"><i class="ri-hammer-line"></i></div>
+            <div class="step__card"><span>المرحلة 03</span><h3>التنفيذ والتركيب</h3><p>تنفيذ الأعمال في الموقع بفريق مؤهل ومدرّب وإشراف مستمر.</p></div>
+          </div>
+          <div class="step">
+            <div class="step__dot"><i class="ri-customer-service-2-line"></i></div>
+            <div class="step__card"><span>المرحلة 04</span><h3>التسليم وخدمة ما بعد البيع</h3><p>فحص دقيق وتسليم المشروع مع خدمة ما بعد البيع.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Clients ===== -->
+    <section class="clients">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__tag fade-up">ثقة عملائنا هي نجاحنا</span>
+          <h2 class="section__title fade-up">القطاعات والجهات <span class="accent">التي نخدمها</span></h2>
+        </div>
+      </div>
+      <div class="clients__marquee">
+        <div class="clients__track">
+          <span>سابك</span><span>وزارة التعليم</span><span>أمانة منطقة القصيم</span><span>صندوق التنمية الزراعية</span><span>هدون</span><span>ايكيا</span><span>سدافكو</span><span>أسواق التميمي</span><span>القصيبي GTC</span><span>سفن بلس</span>
+          <span>سابك</span><span>وزارة التعليم</span><span>أمانة منطقة القصيم</span><span>صندوق التنمية الزراعية</span><span>هدون</span><span>ايكيا</span><span>سدافكو</span><span>أسواق التميمي</span><span>القصيبي GTC</span><span>سفن بلس</span>
+        </div>
+      </div>
+      <div class="container sectors">
+        <div class="sector fade-up"><i class="ri-building-4-line"></i>المشاريع الحكومية</div>
+        <div class="sector fade-up"><i class="ri-community-line"></i>التجارية</div>
+        <div class="sector fade-up"><i class="ri-home-4-line"></i>السكنية</div>
+        <div class="sector fade-up"><i class="ri-graduation-cap-line"></i>التعليمية</div>
+        <div class="sector fade-up"><i class="ri-store-3-line"></i>المستودعات والخدمات اللوجستية</div>
+        <div class="sector fade-up"><i class="ri-settings-4-line"></i>الصناعية</div>
+      </div>
+    </section>
+
+    <!-- ===== Documents ===== -->
+    <section class="section documents" id="documents">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__tag fade-up">مستندات رسمية</span>
+          <h2 class="section__title fade-up">مؤسسة <span class="accent">موثقة ومعتمدة</span></h2>
+          <p class="section__text fade-up">نعمل وفق الأنظمة المعتمدة في المملكة العربية السعودية، وهذه أبرز شهاداتنا وتراخيصنا الرسمية.</p>
+        </div>
+        <div class="docs__grid">
+          <a href="assets/img/docs/license.jpg" class="doc glightbox" data-gallery="docs" data-title="رخصة نشاط تجاري - بلدي">
+            <div class="doc__img"><img src="assets/img/docs/license.jpg" alt="رخصة نشاط تجاري" loading="lazy" /></div>
+            <div class="doc__info"><i class="ri-file-shield-2-line"></i><h3>رخصة نشاط تجاري</h3><span>منصة بلدي</span></div>
+          </a>
+          <a href="assets/img/docs/sca.jpg" class="doc glightbox" data-gallery="docs" data-title="شهادة عضوية مقاول - الهيئة السعودية للمقاولين">
+            <div class="doc__img"><img src="assets/img/docs/sca.jpg" alt="شهادة عضوية مقاول" loading="lazy" /></div>
+            <div class="doc__info"><i class="ri-medal-2-line"></i><h3>شهادة عضوية مقاول</h3><span>الهيئة السعودية للمقاولين</span></div>
+          </a>
+          <a href="assets/img/docs/saudization.jpg" class="doc glightbox" data-gallery="docs" data-title="شهادة سعودة">
+            <div class="doc__img"><img src="assets/img/docs/saudization.jpg" alt="شهادة سعودة" loading="lazy" /></div>
+            <div class="doc__info"><i class="ri-team-line"></i><h3>شهادة سعودة</h3><span>وزارة الموارد البشرية</span></div>
+          </a>
+          <a href="assets/img/docs/balady.jpg" class="doc glightbox" data-gallery="docs" data-title="شهادة تصنيف - بلدي">
+            <div class="doc__img"><img src="assets/img/docs/balady.jpg" alt="شهادة تصنيف بلدي" loading="lazy" /></div>
+            <div class="doc__info"><i class="ri-award-line"></i><h3>شهادة تصنيف</h3><span>منصة بلدي</span></div>
+          </a>
+          <a href="assets/img/docs/registration.jpg" class="doc glightbox" data-gallery="docs" data-title="شهادة التسجيل">
+            <div class="doc__img"><img src="assets/img/docs/registration.jpg" alt="شهادة التسجيل" loading="lazy" /></div>
+            <div class="doc__info"><i class="ri-file-list-3-line"></i><h3>شهادة التسجيل</h3><span>وزارة التجارة</span></div>
+          </a>
+          <a href="assets/img/docs/vat.jpg" class="doc glightbox" data-gallery="docs" data-title="شهادة تسجيل ضريبة القيمة المضافة">
+            <div class="doc__img"><img src="assets/img/docs/vat.jpg" alt="شهادة ضريبة القيمة المضافة" loading="lazy" /></div>
+            <div class="doc__info"><i class="ri-bank-line"></i><h3>شهادة ضريبة القيمة المضافة</h3><span>هيئة الزكاة والضريبة والجمارك</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <div class="cta__bg" style="background-image:url('assets/img/projects/contact-hall.jpg')"></div>
+        <div class="cta__content">
+          <h2>نسعد بخدمتكم</h2>
+          <p>احصل على استشارة وعرض سعر لمشروعك — تواصل معنا الآن.</p>
+        </div>
+        <a href="https://wa.me/966543249360" target="_blank" rel="noopener" class="btn btn--light btn--lg magnetic"><i class="ri-whatsapp-line"></i> راسلنا على واتساب</a>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <span class="section__tag fade-up">تواصل معنا</span>
+          <h2 class="section__title fade-up">ابدأ مشروعك <span class="accent">معنا</span></h2>
+          <p class="section__text fade-up">املأ النموذج وسيتم تحويل طلبك مباشرة إلى واتساب فريقنا.</p>
+          <ul class="contact__list">
+            <li class="fade-up"><i class="ri-phone-line"></i><div><strong>الهاتف</strong>
+              <span class="phones"><a href="tel:0550649926" dir="ltr">0550649926</a><a href="tel:0568772288" dir="ltr">0568772288</a><a href="tel:0500358889" dir="ltr">0500358889</a></span></div></li>
+            <li class="fade-up"><i class="ri-whatsapp-line"></i><div><strong>واتساب</strong><a href="https://wa.me/966543249360" target="_blank" rel="noopener" dir="ltr">+966 54 324 9360</a></div></li>
+            <li class="fade-up"><i class="ri-mail-send-line"></i><div><strong>البريد الإلكتروني</strong><a href="mailto:est.alkhayal2030@gmail.com">est.alkhayal2030@gmail.com</a></div></li>
+            <li class="fade-up"><i class="ri-global-line"></i><div><strong>الموقع الإلكتروني</strong><a href="https://www.fantasyhouse.sa" target="_blank" rel="noopener">www.fantasyhouse.sa</a></div></li>
+          </ul>
+        </div>
+        <form class="contact__form fade-up" id="contactForm">
+          <div class="form__row">
+            <div class="field"><input type="text" id="name" required placeholder=" " /><label for="name">الاسم بالكامل</label></div>
+            <div class="field"><input type="tel" id="phone" required placeholder=" " /><label for="phone">رقم الجوال</label></div>
+          </div>
+          <div class="field"><input type="text" id="city" placeholder=" " /><label for="city">المدينة / موقع المشروع</label></div>
+          <div class="field">
+            <select id="service" required>
+              <option value="" disabled selected hidden></option>
+              <option>مقاولات عامة وإنشاءات</option>
+              <option>تشطيبات داخلية وخارجية</option>
+              <option>ديكورات وجبسيات</option>
+              <option>عزل صوتي</option>
+              <option>بلاط ورخام وبورسلان</option>
+              <option>أعمال كهربائية وصحية</option>
+              <option>أبواب ونوافذ ودرابزينات</option>
+              <option>هياكل ومنشآت حديدية</option>
+            </select>
+            <label for="service">نوع الخدمة</label>
+          </div>
+          <div class="field"><textarea id="msg" rows="4" placeholder=" "></textarea><label for="msg">تفاصيل المشروع</label></div>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">إرسال الطلب عبر واتساب <i class="ri-whatsapp-line"></i></button>
+          <p class="form__note" id="formNote"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__about">
+        <img src="assets/img/brand/logo.png" alt="فانتاسي هاوس" class="footer__logo" />
+        <p>مؤسسة منزل الخيال للمقاولات العامة — نبني رؤيتك بجودة وثقة.</p>
+      </div>
+      <div>
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#projects">أعمالنا</a></li>
+          <li><a href="#documents">مستنداتنا</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>خدماتنا</h4>
+        <ul>
+          <li><a href="#services">المقاولات العامة</a></li>
+          <li><a href="#services">التشطيبات والديكورات</a></li>
+          <li><a href="#acoustic">العزل الصوتي</a></li>
+          <li><a href="#services">الهياكل الحديدية</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>تواصل معنا</h4>
+        <ul class="footer__contact">
+          <li><i class="ri-phone-line"></i> <a href="tel:0550649926" dir="ltr">0550649926</a></li>
+          <li><i class="ri-phone-line"></i> <a href="tel:0568772288" dir="ltr">0568772288</a></li>
+          <li><i class="ri-phone-line"></i> <a href="tel:0500358889" dir="ltr">0500358889</a></li>
+          <li><i class="ri-mail-line"></i> <a href="mailto:est.alkhayal2030@gmail.com">est.alkhayal2030@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">© <span id="year"></span> فانتاسي هاوس — مؤسسة منزل الخيال للمقاولات. جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/966543249360" target="_blank" rel="noopener" class="wa-float" aria-label="واتساب"><i class="ri-whatsapp-line"></i></a>
+  <a href="#home" class="to-top" id="toTop" aria-label="للأعلى"><i class="ri-arrow-up-line"></i></a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
